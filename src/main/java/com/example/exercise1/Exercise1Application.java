@@ -29,6 +29,12 @@ public class Exercise1Application {
 		@Autowired
 		private TransactionService transactionService;
 
+		public CommandLineRunnerImpl(CustomerService customerService, AccountService accountService, TransactionService transactionService) {
+			this.customerService = customerService;
+			this.accountService = accountService;
+			this.transactionService = transactionService;
+		}
+
 		@Override
 		public void run(String... args) throws Exception {
 			// Create a customer
