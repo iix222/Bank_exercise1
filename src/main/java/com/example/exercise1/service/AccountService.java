@@ -21,5 +21,8 @@ public class AccountService {
     public Optional<Account> getAccountInfoByAccountNumber(Long accountNumber) {
         return accountRepository.findByAccountNumber(accountNumber);
     }
+
+    public void createAccount(Account account) {
+    }
 }
 
